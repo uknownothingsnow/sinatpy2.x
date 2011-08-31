@@ -36,11 +36,11 @@ class Test(unittest.TestCase):
     def auth(self):
         
         if len(self.consumer_key) == 0:
-            print "Please set consumer_key£¡£¡£¡"
+            print "Please set consumer_key!!!"
             return
         
         if len(self.consumer_secret) == 0:
-            print "Please set consumer_secret£¡£¡£¡"
+            print "Please set consumer_secret!!!"
             return
                 
         self.auth = OAuthHandler(self.consumer_key, self.consumer_secret)
@@ -71,6 +71,6 @@ class Test(unittest.TestCase):
         print "update---"+ str(id) +":"+ text
 
 test = Test()
-test.auth()#'http://api.t.sina.com.cn/oauth/request_token', 'peking_lzy@yahoo.com.cn', '243161193')
+test.auth()
 test.update("test")
 
